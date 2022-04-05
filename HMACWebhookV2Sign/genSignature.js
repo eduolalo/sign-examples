@@ -1,7 +1,7 @@
 let crypto = require('crypto');
 
 const secret = '7473fded97d74274968348b42f9433ef58e5bed5411a9924725c90b6b8b6ca0f';
-let data = { "deposit_id": "C3C77926-9B30-4770-BA26-FD0FFDDEC930", "date": "2021-02-10T12:44:14.907Z" };
+let data = {"id":"DB62B607-2D48-4EA5-A8AA-C22E063D30EC","date":"2022-04-04T16:17:18.647Z","type":"1"};
 
 /**
  * Convierte un base64 estándar en base64url (RFC 4648 sección 5)
@@ -27,4 +27,4 @@ function sign(data, secret) {
     console.log(base64url(signature));
 }
 
-sign(`${data.deposit_id}${data.date}`, secret);
+sign(`${data.deposit_id}${data.date}${data.type}`, secret);
