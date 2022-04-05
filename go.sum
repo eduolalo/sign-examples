@@ -1,0 +1,8 @@
+github.com/kalmecak/gosigner v0.1.1 h1:f4WrOHjdRe2MGy54RD+69v41Lq7H9CUwIUTgrQ0NyrQ=
+github.com/kalmecak/gosigner v0.1.1/go.mod h1:F8Yo/O3F4z4Byv8TRLJ/KUkb6Q0isuymmLe6r2yYggc=
+github.com/kalmecak/gosigner v0.2.1 h1:kddFcUvvl6HZEG9KONFXK3SpSR70U0fkbYIkvj2W01M=
+github.com/kalmecak/gosigner v0.2.1/go.mod h1:5DUKfenqCPpriZA8esX6A053bmPV+SuR8z8vqYVxkoY=
+github.com/kalmecak/gosigner v0.2.3 h1:j7mIJRWODfNrCOereXe+gE/A9uU3JiWlsQtakPpMGi0=
+github.com/kalmecak/gosigner v0.2.3/go.mod h1:5DUKfenqCPpriZA8esX6A053bmPV+SuR8z8vqYVxkoY=
+github.com/pascaldekloe/jwt v1.10.0 h1:ktcIUV4TPvh404R5dIBEnPCsSwj0sqi3/0+XafE5gJs=
+github.com/pascaldekloe/jwt v1.10.0/go.mod h1:TKhllgThT7TOP5rGr2zMLKEDZRAgJfBbtKyVeRsNB9A=
