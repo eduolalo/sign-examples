@@ -11,8 +11,8 @@ no debes usarlos para tus proyectos.
 
 Para estos ejemplos se necesita como mínimo
 
-* Go v1.15.8
-* NodeJS 14.8.0
+* Go v1.17+
+* NodeJS 17+
 
 ## Como ejecutarlos?
 
@@ -48,7 +48,7 @@ Payload:  {"exp":1613087517,"iat":1613087397,"iss":"7","nbf":1613087397,"scp":"G
 
 Se pretende ejemplificar la firma RSA-PSS para la validación asimétrica
 ```
-go run RSAbodySign/main.go 
+go run RSAbodySign/main.go
 ```
 Deberá darte algo similar a:
 ```
