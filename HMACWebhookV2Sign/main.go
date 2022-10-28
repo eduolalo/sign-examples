@@ -17,7 +17,7 @@ var key = "7473fded97d74274968348b42f9433ef58e5bed5411a9924725c90b6b8b6ca0f"
 type body struct {
 	ID   string `json:"id"`
 	Date string `json:"date"`
-	Type String `json:"type"`
+	Type string `json:"type"`
 }
 
 func main() {
