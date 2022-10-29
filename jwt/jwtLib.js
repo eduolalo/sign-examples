@@ -5,27 +5,35 @@
 const jwt = require('jsonwebtoken');
 const fs = require('fs');
 
+/**
+ * Función para generar el payload
+ * @returns Buffer
+ */
+const payload = function (depositID){
 
-const payload = function (){
-
-
+    Math.round(Date.now() / 1000)
     const now = new Date;
-    const nbf = now.getTime();
+    const nbf = Math.round(now.getTime() / 1000);
+    const exp = Math.round(now.getTime() / 1000) + 6;
     pl = JSON.stringify({
-        "sub": "/deposit/c7f1c988-92b5-48fa-9d35-2fa4f65ed4d9",
+        "sub": `/deposit/${depositID}`,
         "scp": "GET",
-        "exp": now.getTime() + 5,
+        "exp": exp,
         "nbf": nbf,
         "iat": nbf,
-        "iss": "7"
+        "iss": "7" // <- Cambia por tu clientID
     });
     return Buffer.from(pl, "utf-8");
 };
 
-function singjwt(){
+/**
+ * 
+ * @returns string JWT degenerado
+ */
+function singjwt(depositID){
 
     const privateKey = fs.readFileSync('../private.pem');
-    const token = jwt.sign(payload(), privateKey, { algorithm: 'RS256' });
+    const token = jwt.sign(payload(depositID), privateKey, { algorithm: 'RS256' });
     return token;
 }
 

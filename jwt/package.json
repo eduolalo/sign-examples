@@ -10,7 +10,6 @@
     "node": "v12.22.12"
   },
   "scripts": {
-    "jose": "node joseLib.js",
     "jsonwebtoken": "node jwtLib.js"
   },
   "private": false,
