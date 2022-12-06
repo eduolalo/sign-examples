@@ -14,14 +14,14 @@ const payload = function (depositID){
     Math.round(Date.now() / 1000)
     const now = new Date;
     const nbf = Math.round(now.getTime() / 1000);
-    const exp = Math.round(now.getTime() / 1000) + 6;
+    const exp = Math.round(now.getTime() / 1000) + 5;
     pl = JSON.stringify({
         "sub": `/deposit/${depositID}`,
         "scp": "GET",
         "exp": exp,
         "nbf": nbf,
         "iat": nbf,
-        "iss": "7" // <- Cambia por tu clientID
+        "iss": "2" // <- Cambia por tu clientID
     });
     return Buffer.from(pl, "utf-8");
 };
