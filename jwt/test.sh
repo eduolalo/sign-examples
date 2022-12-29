@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-for i in {1..10}
-do
-    node index.js
-done
+export API_KEY="YOUR_API_KEY"
+export HOST_TEST="host.test"
+node index.js

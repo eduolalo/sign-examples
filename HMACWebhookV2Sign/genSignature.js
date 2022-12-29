@@ -1,7 +1,7 @@
 let crypto = require('crypto');
 
 const secret = '7473fded97d74274968348b42f9433ef58e5bed5411a9924725c90b6b8b6ca0f';
-let data = {"id":"DB62B607-2D48-4EA5-A8AA-C22E063D30EC","date":"2022-04-04T16:17:18.647Z","type":"1"};
+let data = {"id":"4f54775e-577e-485b-b801-6cc8bfc305cc","date":"2022-12-29T13:50:10.21Z","type":"1"};
 
 /**
  * Convierte un base64 estándar en base64url (RFC 4648 sección 5)
